@@ -1,0 +1,18 @@
+server:
+  #指定端口
+  port: 17770
+  servlet:
+    context-path: /manage_user
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: user-manager # 项目名称
+
+  # JSON
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+    serialization:
+      write-dates-as-timestamps: false
