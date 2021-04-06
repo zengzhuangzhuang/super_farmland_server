@@ -1,14 +1,14 @@
 server:
   #指定端口
-  port: 17770
+  port: 17771
   servlet:
-    context-path: /manage_user
+    context-path: /manage_product
 
 spring:
   profiles:
     active: dev
   application:
-    name: manage_user # 项目名称
+    name: manage_product # 项目名称
 
   # JSON
   jackson:
@@ -48,7 +48,7 @@ spring:
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
       # 值的反序列化方式
       value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      group-id: manage_user
+      group-id: manage_product
     listener:
       # 在侦听器容器中运行的线程数。
       concurrency: 5

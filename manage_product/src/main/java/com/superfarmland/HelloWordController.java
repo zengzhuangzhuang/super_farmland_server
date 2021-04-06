@@ -1,6 +1,7 @@
 package com.superfarmland;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -21,6 +22,14 @@ public class HelloWordController {
     public String helloWordFunc(){
         kafkaTemplate.send("topic.test","djasidhaidalsdadjoa");
         return "JAVA世界欢迎你。";
+    }
+
+
+    // 消费监听
+    @KafkaListener(topics = {"topic.test"})
+    public void onMessage1(ConsumerRecord<?, ?> record){
+        // 消费的哪个topic、partition的消息,打印出消息内容
+        System.out.println("简单消费："+record.topic()+"-"+record.partition()+"-"+record.value());
     }
 
 }
