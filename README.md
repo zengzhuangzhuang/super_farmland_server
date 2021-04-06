@@ -20,6 +20,15 @@ ___粗斜体文本___
 ###详情请参考
 https://www.runoob.com/markdown/md-paragraph.html
 
-## 三、项目启动之前请在本机启动redis服务
+## 三、项目搭建redis缓存服务
 项目目录下developmentTools/redis-server.rar解压即可。  
 另有redis管理工具developmentTools/redis-desktop-manager-0.9.3.817.rar
+
+## 四、项目搭建kafka消息服务
+### 1.下载zookeeper，并启动
+项目目录下developmentTools/apache-zookeeper-3.7.0.rar解压即可。 
+### 2.下载kafka文件包，并启动
+项目目录下developmentTools/kafka_2.12-2.7.0.rar解压即可。
+### 3.另有kafka集群管理工具
+项目目录下developmentTools/offsetexplorer_64bit.rar。
+
