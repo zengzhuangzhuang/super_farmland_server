@@ -19,3 +19,7 @@ ___粗斜体文本___
 
 ###详情请参考
 https://www.runoob.com/markdown/md-paragraph.html
+
+## 三、项目启动之前请在本机启动redis服务
+项目目录下developmentTools/redis-server.rar解压即可。  
+另有redis管理工具developmentTools/redis-desktop-manager-0.9.3.817.rar
