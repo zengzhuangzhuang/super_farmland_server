@@ -23,31 +23,35 @@
             <version>RELEASE</version>
             <scope>compile</scope>
         </dependency>
-        <!--<dependency>
+
+        <!-- spring-cloud -->
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-config</artifactId>
         </dependency>
 
-        &lt;!&ndash; nacos注册中心依赖  &ndash;&gt;
+        <!-- nacos注册中心依赖  -->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
+            <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
         </dependency>
-        &lt;!&ndash; 允许springcloud服务调用 &ndash;&gt;
+        <!-- nacos配置中心依赖 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <!-- springcloud服务调用 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
-        &lt;!&ndash; nacos配置中心依赖 &ndash;&gt;
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
-        </dependency>
-        &lt;!&ndash; 阿里巴巴数据源 &ndash;&gt;
+
+        <!-- 阿里巴巴数据源 数据库连接池 -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid</artifactId>
-        </dependency>-->
+        </dependency>
 
         <!-- Mysql数据库驱动依赖 -->
         <!--<dependency>

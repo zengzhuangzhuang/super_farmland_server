@@ -32,3 +32,7 @@ https://www.runoob.com/markdown/md-paragraph.html
 ### 3.另有kafka集群管理工具
 项目目录下developmentTools/offsetexplorer_64bit.rar。
 
+## 五、项目搭建spring-cloud之nacos
+### 1.nacos官网下载1.3.1版本。https://github.com/alibaba/nacos/releases
+### 2.需要安装mysql数据库
+

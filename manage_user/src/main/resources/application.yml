@@ -2,13 +2,13 @@ server:
   #指定端口
   port: 17770
   servlet:
-    context-path: /manage_user
+    context-path: /manage-user
 
 spring:
   profiles:
     active: dev
   application:
-    name: manage_user # 项目名称
+    name: manage-user # 项目名称
 
   # JSON
   jackson:

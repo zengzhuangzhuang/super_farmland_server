@@ -23,4 +23,10 @@ public class HelloWordController {
         return "JAVA世界欢迎你。";
     }
 
+    @RequestMapping("/hellowordForFeign")
+    @ResponseBody
+    public String hellowordForFeign(){
+        return "JAVA世界欢迎你。Feign";
+    }
+
 }
