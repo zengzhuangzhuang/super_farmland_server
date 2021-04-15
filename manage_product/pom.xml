@@ -54,27 +54,33 @@
         </dependency>
 
         <!-- Mysql数据库驱动依赖 -->
-        <!--<dependency>
+        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.16</version>
-        </dependency>-->
+        </dependency>
 
-        <!--&lt;!&ndash; Mybatis-Plus依赖 &ndash;&gt;
+        <!-- Mybatis-Plus依赖 -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
         </dependency>
-        &lt;!&ndash; mybatis-plus代码生成器与模板引擎的依赖  &ndash;&gt;
+        <!-- mybatis-plus代码生成器与模板引擎的依赖  -->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
         </dependency>
-        &lt;!&ndash;mybatis的loaclDate问题&ndash;&gt;
+        <!--mybatis的loaclDate问题-->
         <dependency>
             <groupId>org.mybatis</groupId>
             <artifactId>mybatis-typehandlers-jsr310</artifactId>
-        </dependency>-->
+        </dependency>
+
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
 
         <!--kafka消息中间件-->
         <dependency>
