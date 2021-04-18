@@ -2,6 +2,7 @@ import org.junit.Test;
 import sun.misc.Unsafe;
 
 import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -62,6 +63,9 @@ public class TestJava {
 
             }
         }
+
+        AtomicReference<String> atomicString = new AtomicReference("aaa");
+        System.out.println(atomicString.get());
 
     }
 

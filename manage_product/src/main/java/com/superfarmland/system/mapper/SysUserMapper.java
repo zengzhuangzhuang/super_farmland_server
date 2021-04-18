@@ -2,6 +2,7 @@ package com.superfarmland.system.mapper;
 
 import com.superfarmland.system.entity.SysUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**
@@ -10,9 +11,9 @@ import org.springframework.stereotype.Repository;
  * </p>
  *
  * @author zzz
- * @since 2021-04-15
+ * @since 2021-04-18
  */
-@Repository
+@Mapper
 public interface SysUserMapper extends BaseMapper<SysUser> {
 
 }
