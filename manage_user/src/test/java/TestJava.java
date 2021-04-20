@@ -12,6 +12,8 @@ public class TestJava {
 
     Lock lock = new ReentrantLock();
 
+    ThreadLocal<String> localString = new ThreadLocal<>();
+
     //测试代码
     @Test
     public void testMethod(){

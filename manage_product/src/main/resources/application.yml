@@ -6,7 +6,7 @@ server:
 
 spring:
   profiles:
-    active: dev
+    active: @profile.active@
   application:
     name: manage-product # 项目名称
 
@@ -89,3 +89,8 @@ mybatis-plus:
       logic-not-delete-value: 1
       # 删除后
       logic-delete-value: 0
+
+# 允许服务熔断
+feign:
+  hystrix:
+    enabled: true

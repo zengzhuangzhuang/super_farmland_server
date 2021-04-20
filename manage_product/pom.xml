@@ -98,6 +98,12 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
+        <!-- 服务熔断剪辑-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+        </dependency>
+
     </dependencies>
 
 
@@ -111,6 +117,18 @@
                 </configuration>
             </plugin>
         </plugins>
+
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <!--可以在此配置过滤文件  -->
+                <includes>
+                    <include>**/*.yml</include>
+                </includes>
+                <!--开启filtering功能  -->
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
 
 

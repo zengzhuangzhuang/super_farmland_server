@@ -6,7 +6,7 @@ server:
 
 spring:
   profiles:
-    active: dev
+    active: @profile.active@
   application:
     name: manage-user # 项目名称
 
@@ -67,3 +67,8 @@ spring:
         max-idle: 8
         min-idle: 0
     timeout: 30000
+
+# 允许服务熔断
+feign:
+  hystrix:
+    enabled: true
